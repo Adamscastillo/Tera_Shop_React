@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 35px;
+}
+.containerCard {
+  padding: 0 30px;
+}

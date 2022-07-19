@@ -1,0 +1,11 @@
+.carouselImg {
+  height: 100vh;
+  width: 100vw;
+  padding: 8% 15% 0 15%;
+}
+img {
+  max-width: 100vw;
+  max-height: 100vh;
+  width: auto;
+  height: auto;
+}
