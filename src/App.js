@@ -4,6 +4,7 @@ import NavBar from './components/header/index'
 import CarouselImagens from './components/carroussel'
 import CardProdutos from './components/cardsProducts'
 import './App.css'
+import CarouselProdutos from './components/produtosC/carouselProdutos'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavBar />
       <CarouselImagens />
       <CardProdutos />
+      <CarouselProdutos />
     </div>
   )
 }

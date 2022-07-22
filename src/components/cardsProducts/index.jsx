@@ -25,7 +25,7 @@ function CardProdutos() {
           </Card>
         </Col >
         <Col className='containerCard'>
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', height: '442px'}}>
             <Card.Img variant="top" src={CardImage2} />
             <Card.Body>
               <Card.Title>Tênis</Card.Title>
