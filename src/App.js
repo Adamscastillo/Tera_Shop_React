@@ -1,10 +1,10 @@
 import React from 'react'
-
 import NavBar from './components/header/index'
 import CarouselImagens from './components/carroussel'
 import CardProdutos from './components/cardsProducts'
 import './App.css'
-import CarouselProdutos from './components/produtosC/carouselProdutos'
+import ListTenis from './components/TenisAPi/TenisApi'
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
@@ -12,7 +12,8 @@ function App() {
       <NavBar />
       <CarouselImagens />
       <CardProdutos />
-      <CarouselProdutos />
+      <ListTenis />
+      <Footer />
     </div>
   )
 }
