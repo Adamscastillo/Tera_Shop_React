@@ -11,7 +11,7 @@ import './style.css'
 function CardProdutos() {
   return (
     <Form className='container'>
-      <Row>
+      <Row className='row'>
         <Col className='containerCard' >
           <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={CardImage} />

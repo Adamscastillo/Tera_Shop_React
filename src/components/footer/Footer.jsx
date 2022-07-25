@@ -1,4 +1,3 @@
-
 import {FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import './Footer.css'
 
@@ -17,7 +16,7 @@ function Footer(){
           <FaLinkedin/>
         </li>
      </ul>
-      <p className='copy_right'><span>GODOI & CAstillo</span> @copy 2022</p>
+      <p className='copy_right'><span>GODOY & CAstillo</span> @copy 2022</p>
     </footer>
   )
 

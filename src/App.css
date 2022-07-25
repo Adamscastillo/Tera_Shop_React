@@ -3,7 +3,8 @@
   padding: 0;
 }
 body {
-  background-image: url(components/carroussel/imgs/background);
+  background-image: repeating-conic-gradient(#333 0deg 10deg, #bfc0d0 10deg 20deg, #e7e9eb 20deg 30deg);
   background-repeat: no-repeat;
-  background-repeat: no-repeat;
+  background-size: cover;
+  
 }

@@ -5,6 +5,7 @@ import CardProdutos from './components/cardsProducts'
 import './App.css'
 import ListTenis from './components/TenisAPi/TenisApi'
 import Footer from './components/footer/Footer'
+import ImagePromo from './components/promoção/promo'
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
       <CarouselImagens />
       <CardProdutos />
       <ListTenis />
+      <ImagePromo />
       <Footer />
+     
     </div>
   )
 }
