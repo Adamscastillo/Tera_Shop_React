@@ -12,7 +12,6 @@ function TenisApi() {
   useEffect(()=>{
     axios.get(url)
     .then((response) => {
-      console.log (response)
   
      setData(response.data)
       

@@ -8,6 +8,28 @@
 }
 .title {
   margin-right: 2rem;
+  font-family:"Times New Roman", Times, serif;
+  animation: animacao 2s infinite
+}
+
+@keyframes animacao {
+  50% {opacity: 0};
+}
+
+.styleButton:hover {
+  background-color: rgb(231, 227, 227);
+  color: black;
+  transform: scale3d(1.5);
+  transition: 1s;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 1px solid #000000;
+}
+.styleButton {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
 }
 .registration {
   display: flex;
