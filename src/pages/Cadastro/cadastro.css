@@ -1,0 +1,26 @@
+.main-cadastro {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    width: 80vw;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    background-color: rgba(10,23,55,0.5);
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+}
+.form-group {
+    margin: 10px;
+    width: 400px;
+}
