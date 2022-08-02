@@ -1,0 +1,40 @@
+.Itens-NotFoud {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+}
+
+.NotFoud {
+  background: red;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  animation: go-back 0.5s infinite alternate;
+}
+
+@keyframes go-back {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.title-NotFoud {
+  width: 20vw;
+  height: auto;
+  animation: go-title 1s infinite alternate;
+}
+
+@keyframes go-title {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}

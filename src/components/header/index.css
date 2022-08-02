@@ -8,12 +8,14 @@
 }
 .title {
   margin-right: 2rem;
-  font-family:"Times New Roman", Times, serif;
-  animation: animacao 2s infinite
+  font-family: 'Times New Roman', Times, serif;
+  animation: animacao 2s infinite;
 }
 
 @keyframes animacao {
-  50% {opacity: 0};
+  50% {
+    opacity: 0;
+  }
 }
 
 .styleButton:hover {
@@ -30,6 +32,13 @@
   display: flex;
   align-items: center;
   font-weight: 500;
+}
+.link {
+  text-decoration: none;
+  color: var(--bs-nav-link-color);
+}
+.link:hover {
+  color: black;
 }
 .registration {
   display: flex;
