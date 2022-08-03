@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Home/Home'
 import Notfoud from './NotFoud/Notfoud'
 import Cadastro from './Cadastro/Cadastro'
@@ -9,7 +9,7 @@ import Footer from '../components/footer/Footer'
 
 function Routing() {
   return (
-    <BrowserRouter>
+    <Router>
       <NavBar />
       <Routes>
         <Route element={<Home />} exact path="/" />
@@ -19,7 +19,7 @@ function Routing() {
         <Route element={<Notfoud />} exact path="/*" />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </Router>
   )
 }
 export default Routing
