@@ -13,6 +13,7 @@ function Home() {
       <CardProdutos />
       <ListTenis />
       <ImagePromo />
+      <ListTenis />
       <TenisPromo />
     </div>
   )

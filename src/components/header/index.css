@@ -50,5 +50,8 @@
   margin-left: 15px;
   margin-right: 15px;
 }
+.contato {
+  color: black;
+}
 @media screen and (max-width: 990px) {
 }

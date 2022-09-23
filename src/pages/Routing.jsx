@@ -3,9 +3,10 @@ import Home from './Home/Home'
 import Notfoud from './NotFoud/Notfoud'
 import Cadastro from './Cadastro/Cadastro'
 import Produto from './Produto/Produto'
-import Login from './Login/login'
+import Login from './Login/Login'
 import NavBar from '../components/header'
 import Footer from '../components/footer/Footer'
+import PageProduct from './PageProduct/PageProduct'
 
 function Routing() {
   return (
@@ -17,6 +18,8 @@ function Routing() {
         <Route element={<Cadastro />} exact path="/cadastro" />
         <Route element={<Login />} exact path="/login" />
         <Route element={<Notfoud />} exact path="/*" />
+        <Route element={<PageProduct />} exact path="/page" />
+        
       </Routes>
       <Footer />
     </Router>

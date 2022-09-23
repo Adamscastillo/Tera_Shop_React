@@ -6,6 +6,7 @@
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
+  height: 445px;
 }
 
 .container .carousel::-webkit-scrollbar {
@@ -87,9 +88,10 @@
   padding: 2px 2px;
   margin-top: 15px;
   margin-left: 2rem;
-  height: 1.2rem;
+  height: 1.8rem;
   font-weight: bold;
   font-size: 15px;
   background-color: #ff7e3b;
   border-radius: 0.75rem;
+  
 }

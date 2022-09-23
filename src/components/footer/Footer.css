@@ -3,6 +3,7 @@
   color: #fff;
   padding: 1em;
   text-align: center;
+  
 }
 .social_list {
   display: flex;
@@ -26,4 +27,13 @@
 .copy_right span {
   font-size: bold;
   color: #ffbb33;
+}
+
+.iconws {
+  width: 44px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
 }

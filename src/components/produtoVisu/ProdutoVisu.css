@@ -1,0 +1,153 @@
+.container-produto {
+    width: 90vw;
+    height: 80vh;
+    
+    display: flex;
+    justify-content: center;
+    transform: translateX(5.3%);
+    margin-top: 90px;
+}
+.container-left-produto {
+    width: 50%;
+}
+.container-right-produto {
+    width: 50%;
+
+}
+.div-img-product {
+    display: flex;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+.container-right-produto .div-img-product img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: solid 1px black;
+    cursor: pointer;
+}
+.text-product {
+    font-size: 30px;
+}
+.container-left-produto img {
+    width: 550px;   
+   
+}
+
+
+
+
+.info-product {
+    height: 500px;
+    display: flex;
+    width: 90vw;
+    transform: translateX(5.3%);
+}
+.info-left{
+    width: 50%;
+}
+
+.preco {
+    font-size:50px;
+    font-weight:800;
+}
+
+.infoeconomia{
+    font-size: 20px;
+    color: rgb(228, 85, 85);
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+
+.infonet{
+    font-size: 20px;
+    text-decoration:underline;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+.img-cor img {
+    border-radius: 50px;
+    width: 90px;
+    border: solid 1px black;
+    margin: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.cor {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+
+}
+
+.tamanho {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.frete {
+    width: 100%;
+    height: 150px;
+}
+
+.comprar {
+    width: 300px;
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: #FF4500;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 1px solid black;
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 2s;
+}
+.comprar :hover {
+    transform: scale(1.2);
+    transition: 2s;
+}
+.comprar a {
+    align-items: center;
+    line-height: 40px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-style: initial;
+}
+
+
+.img-ball {
+    margin-left: 110px;
+}
+.img-ball img {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 60px;
+    transform: rotate(180deg)repeat;
+    transition: 3s;
+    animation: ball 1s ease-in-out alternate-reverse infinite;
+    position: absolute;
+    z-index: 999;
+}
+.img-tenis-animation img {
+    width: 100px;    
+    margin-top: 50px;
+    margin-left: 110px;
+    animation: tenis 1s ease-out alternate infinite;
+}
+
+@keyframes ball {
+   to {
+    transform: translateY(50px);
+   }
+}
+@keyframes tenis {
+    to {
+        transform: translateY(20px);
+    }
+}

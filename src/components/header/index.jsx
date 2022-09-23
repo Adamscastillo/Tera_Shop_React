@@ -48,7 +48,7 @@ function NavBar() {
               <BsPiggyBankFill></BsPiggyBankFill> Ofertas
             </Nav.Link>
             <NavDropdown
-              className="styleButton"
+              className="styleButton contato"
               title="Contato"
               id="navbarScrollingDropdown"
             >

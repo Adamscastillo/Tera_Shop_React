@@ -2,16 +2,16 @@ import React from "react";
 import { useEffect, useState, } from 'react'
 import InputMask from "react-input-mask";
 import Form from "react-bootstrap/Form";
-import '../Cadastro/cadastro.css'
+import '../../pages/Cadastro/cadastro.css'
 import axios from "axios";
-/* import {useForm} from 'react-hook-form' */
 
 
- const api = 'viacep.com.br/ws/01001000/json/'
+
+const api = 'viacep.com.br/ws/01001000/json/'
   console.log(api)
-function CepApi () {
+function FreteApi () {
 
-  const [Cep, setCep] = useState([])
+  const [frete, setCep] = useState([])
 
   useEffect(() => {
     axios
@@ -24,11 +24,11 @@ function CepApi () {
   }
 
        
-const MaskCep = (props) => (
+const CalcFrete = (props) => (
   
 
       <Form.Group className="mb-3 form-group">
-        <Form.Label>CEP</Form.Label>
+        <Form.Label>Calcular Frete</Form.Label>
         <InputMask
           mask="99999-999"
           maxLength={50}
@@ -43,4 +43,4 @@ const MaskCep = (props) => (
 
 );
 
-export default MaskCep;
+export default CalcFrete;
