@@ -1,5 +1,5 @@
 .container {
-  max-width: 75vw;
+  max-width: 96vw;
   display: block;
 }
 .container .carousel {
@@ -7,6 +7,8 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   height: 445px;
+  width: 96vw;
+    
 }
 
 .container .carousel::-webkit-scrollbar {

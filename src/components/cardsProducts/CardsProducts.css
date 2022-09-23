@@ -1,11 +1,11 @@
-.container {
+.container-card {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 25px 0px;
+  padding: 25px 25px;
 }
 .containerCard {
-  padding: 0 15px;
+  padding: 10px 75px;
 }
 .row {
   flex-wrap: nowrap;
