@@ -10,7 +10,7 @@ import './style.css'
 
 function CardProdutos() {
   return (
-    <Form className='container'>
+    <Form className='container-card'>
       <Row className='row'>
         <Col className='containerCard' >
           <Card style={{ width: '18rem' }}>
