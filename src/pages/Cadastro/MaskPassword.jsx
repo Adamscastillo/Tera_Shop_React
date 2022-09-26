@@ -12,6 +12,7 @@ const MaskSenha = (props) => (
           type={"password"}
           mask=""
           minLength={8}
+          maxLength={20}
           value={props.value}
           onChange={props.onChange}
         >

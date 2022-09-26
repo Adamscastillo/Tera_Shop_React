@@ -1,46 +1,46 @@
-import React from "react";
-import { useEffect, useState, } from 'react'
-import InputMask from "react-input-mask";
-import Form from "react-bootstrap/Form";
-import '../Cadastro/cadastro.css'
-import axios from "axios";
-/* import {useForm} from 'react-hook-form' */
+import React from 'react';
+import { useForm } from 'react-hook-form';
+import '../Cadastro/cadastro.css';
 
 
- const api = 'viacep.com.br/ws/01001000/json/'
-  console.log(api)
-function CepApi () {
+function App() {
 
-  const [Cep, setCep] = useState([])
+  const {register, handleSubmit, setValue, setFocus} = useForm();
 
-  useEffect(() => {
-    axios
-      .get(api)
-      .then(response => {
-        setCep(response.Cep)
-      })
-      .catch(error => console.log(error))
-  }, [])
+  const onSubmit = (e) => {
+    console.log(e);
   }
 
-       
-const MaskCep = (props) => (
-  
+  const checkCEP = (e) => {
+    const cep = e.target.value.replace(/\D/g, '');
+    console.log(cep)
+    
+    if(cep !== ''){
+      fetch(`https://viacep.com.br/ws/${cep}/json/`).then(res => res.json()).then(data => {
+        console.log(data);
+        // register({ name: 'address', value: data.logradouro });
+        setValue('city', data.localidade);
+        setValue('uf', data.uf);      
+    }
+    )};
+  }
 
-      <Form.Group className="mb-3 form-group">
-        <Form.Label>CEP</Form.Label>
-        <InputMask
-          mask="99999-999"
-          maxLength={50}
-          value={props.value}
-          onChange={props.onChange}
-        >
-          {(inputProps) => (
-            <Form.Control {...inputProps} placeholder="Digite seu CEP" />
-          )}
-        </InputMask>
-      </Form.Group>           
+  return (
+    <form onSubmit={handleSubmit(onSubmit)} className="form-group">
+      <label className='form-input '>
+        CEP:
+        <input type="text" className='' {...register("cep")} onBlur={checkCEP} />
+      </label>  
+      <label className='form-input aparecer'>
+        Cidade:
+        <input type="text" {...register("city" )}/>
+      </label>
+      <label className='form-input aparecer'>
+        Estado:
+        <input type="text" {...register("uf" )}/>
+      </label>
+    </form>
+  );
+}
 
-);
-
-export default MaskCep;
+export default App;

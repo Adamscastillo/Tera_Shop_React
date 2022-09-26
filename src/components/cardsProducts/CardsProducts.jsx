@@ -6,7 +6,7 @@ import CardImage3 from './imgs/card3.webp'
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Row from 'react-bootstrap/Row'
-import './style.css'
+import './CardsProducts.css'
 
 function CardProdutos() {
   return (

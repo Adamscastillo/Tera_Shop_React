@@ -42,7 +42,7 @@ function Cadastro() {
   return (
     <div className="main-cadastro">
       <Form className="form">
-        <MaskName />
+         <MaskName />
 
         <MaskEmail />
 
@@ -50,10 +50,10 @@ function Cadastro() {
 
         <MaskTel />
 
-        <MaskCep />
+       <MaskCep />
 
-        <MaskSenha />
-        
+        <MaskSenha /> 
+         
         <Button variant="primary" type="submit">
           Enviar
         </Button>

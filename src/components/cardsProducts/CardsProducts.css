@@ -1,0 +1,12 @@
+.container-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 25px;
+}
+.containerCard {
+  padding: 10px 30px;
+}
+.row {
+  flex-wrap: nowrap;
+}
