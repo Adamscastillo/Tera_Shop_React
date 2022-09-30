@@ -15,7 +15,7 @@ const MaskName = (props) => (
           onChange={props.onChange}
         >
           {(inputProps) => (
-            <Form.Control {...inputProps} placeholder="Digite seu Nome" />
+            <Form.Control {...inputProps} placeholder="Digite seu Nome" required />
           )}
         </InputMask>
       </Form.Group>

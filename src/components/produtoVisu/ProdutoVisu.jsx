@@ -21,26 +21,17 @@ function ProdutoVisu() {
                 </div>
 
                 <div className="container-right-produto">
-                    <h1 className="title-product">TÊNIS NIKE SHOX NZ SE - PRETO E VERMELHO</h1>
+                    <div class="preco">R$ 359,99</div>
+                    <div class="infoeconomia">Economia de  R$ 340,00 (48%) em até 9x de 40,00</div>
+                    <div class="infonet">Vendido e enviado por <a href="" >TERASHOP</a></div>
+                    <div class="cor">Cor: Preto e Vermelho.</div>
+                    
                     <div className="div-img-product">
                         <img src={img1} onClick={() => setImagemPrincipal(img1)} className="img-product" alt=""/>
                         <img src={img2} onClick={() => setImagemPrincipal(img2)} className="img-product" alt=""/>
                         <img src={img3} onClick={() => setImagemPrincipal(img3)} className="img-product" alt=""/>
                     </div>
-                    <p className="text-product">O Tênis Nike Shox Nz Se foi desenvolvido para os homens que não dispensam conforto e nem estilo. Uma ótima pedida para compor a produção e aproveitar a casualidade do dia a dia.</p>
-                </div>                        
-            </div>
-            <div className="info-product">
-                <div className="info-left">
-                    <div class="preco">R$ 359,99</div>
-                    <div class="infoeconomia">Economia de  R$ 340,00 (48%) em até 9x de 40,00</div>
-                    <div class="infonet">Vendido e enviado por <a href="" >TERASHOP</a></div>
-                    <div class="cor">Cor: Preto e Vermelho.</div>
-                    <div className="img-cor">
-                        <img src={img1} alt="" />
-                        <img src={img1} alt="" />
-                        <img src={img1} alt="" />
-                    </div>
+
                     <div class="tamanho">
                         Tamanho:
                         <form method="POST">
@@ -53,7 +44,21 @@ function ProdutoVisu() {
                                 <option>46</option>
                             </select>
                         </form>
-                    </div>                
+                        
+                    </div>
+                    <div className="img-cor">
+                        <img src={img1} alt="" />
+                        <img src={img1} alt="" />
+                        <img src={img1} alt="" />
+                    </div>
+                    
+                   
+                </div>                        
+            </div>
+            <div className="info-product">
+                <div className="info-left">
+                    <h1 className="title-product">TÊNIS NIKE SHOX NZ SE - PRETO E VERMELHO</h1>                    
+                    <p className="text-product">O Tênis Nike Shox Nz Se foi desenvolvido para os homens que não dispensam conforto e nem estilo. Uma ótima pedida para compor a produção e aproveitar a casualidade do dia a dia.</p>                   
                 </div>
                 
                 <div className="info-rigth">
@@ -62,12 +67,7 @@ function ProdutoVisu() {
                     <div class="comprar">
                         <a href="">COMPRAR</a>
                     </div>  
-                    <div className="img-ball">
-                        <img src={imgball} alt="" />
-                    </div>  
-                    <div className="img-tenis-animation">
-                        <img src={img1} alt="" />
-                    </div>            
+                          
                 </div>
             </div>
         </>

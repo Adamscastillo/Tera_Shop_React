@@ -1,5 +1,5 @@
 .container-produto {
-    width: 100vw;
+    width: 90vw;
     height: 80vh;
     
     display: flex;
@@ -8,10 +8,10 @@
     margin-top: 90px;
 }
 .container-left-produto {
-    width: 50%;
+    width: 49%;
 }
 .container-right-produto {
-    width: 50%;
+    width: 49%;
 
 }
 .div-img-product {
@@ -24,13 +24,13 @@
     margin: 10px;
     border: solid 1px black;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 .text-product {
     font-size: 30px;
 }
 .container-left-produto img {
     width: 550px;   
-   
 }
 
 
@@ -41,6 +41,7 @@
     display: flex;
     width: 90vw;
     transform: translateX(5.3%);
+    margin-top: 30px;
 }
 .info-left{
     width: 50%;
@@ -84,9 +85,11 @@
     font-size: 20px;
     font-weight: 600;
     color: black;
+    margin-bottom: 15px;
 }
 
 .frete {
+    margin-top: 60px;
     width: 100%;
     height: 150px;
 }
@@ -95,7 +98,7 @@
     width: 300px;
     height: 40px;
     margin-left: 50px;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 60px;
     background-color: #FF4500;
     border-radius: 200px 200px 200px 200px;
@@ -118,36 +121,4 @@
     justify-content: center;
     color: white;
     font-style: initial;
-}
-
-
-.img-ball {
-    margin-left: 110px;
-}
-.img-ball img {
-    margin-left: 50px;
-    margin-bottom: 20px;
-    width: 60px;
-    transform: rotate(180deg)repeat;
-    transition: 3s;
-    animation: ball 1s ease-in-out alternate-reverse infinite;
-    position: absolute;
-    z-index: 999;
-}
-.img-tenis-animation img {
-    width: 100px;    
-    margin-top: 50px;
-    margin-left: 110px;
-    animation: tenis 1s ease-out alternate infinite;
-}
-
-@keyframes ball {
-   to {
-    transform: translateY(50px);
-   }
-}
-@keyframes tenis {
-    to {
-        transform: translateY(20px);
-    }
 }

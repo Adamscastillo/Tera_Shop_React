@@ -27,7 +27,7 @@ function FreteApi () {
 const CalcFrete = (props) => (
   
 
-      <Form.Group className="mb-3 form-group">
+      <Form.Group className="mb-3 form-group frete">
         <Form.Label>Calcular Frete</Form.Label>
         <InputMask
           mask="99999-999"
