@@ -2,6 +2,11 @@
   max-width: 95vw;
   display: block;
 }
+.api-title {
+  font-size: 25px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
 .container .carousel {
   display: flex;
   overflow-x: auto;

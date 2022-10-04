@@ -14,7 +14,7 @@ const MaskTel = (props) => (
           onChange={props.onChange}
         >
           {(inputProps) => (
-            <Form.Control {...inputProps} placeholder="Digite seu Telefone" />
+            <Form.Control {...inputProps} placeholder="Digite seu Telefone" required />
           )}
         </InputMask>
       </Form.Group>

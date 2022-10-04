@@ -15,7 +15,7 @@ const MaskEmail = (props) => (
           onChange={props.onChange}
         >
           {(inputProps) => (
-            <Form.Control {...inputProps} placeholder="Digite seu E-mail" />
+            <Form.Control {...inputProps} placeholder="Digite seu E-mail" required />
           )}
         </InputMask>
       </Form.Group>

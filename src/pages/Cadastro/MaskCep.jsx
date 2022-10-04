@@ -21,13 +21,13 @@ function App() {
         // register({ name: 'address', value: data.logradouro });
         setValue('city', data.localidade);
         setValue('uf', data.uf);      
-    }
+    } 
     )};
   }
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="form-group">
-      <label className='form-input '>
+      <label className='form-input'>
         CEP:
         <input type="text" className='' {...register("cep")} onBlur={checkCEP} />
       </label>  

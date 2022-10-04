@@ -32,6 +32,7 @@ function TenisApi() {
 
   return (
     <div className="container">
+      <h1 className='api-title'>ℙℝ𝕆𝕄𝕆ℂÕ𝔼𝕊 𝔻𝔸 𝕊𝔼𝕄𝔸ℕ𝔸</h1>
       <div className="carousel" ref={carousel}>
         {data.map(item => {
           const { id, name, price, oldPrice, image } = item

@@ -14,7 +14,7 @@ const MaskCpf = (props) => (
           onChange={props.onChange}
         >
           {(inputProps) => (
-            <Form.Control {...inputProps} placeholder="Digite seu CPF" />
+            <Form.Control {...inputProps} placeholder="Digite seu CPF" required />
           )}
         </InputMask>
       </Form.Group>

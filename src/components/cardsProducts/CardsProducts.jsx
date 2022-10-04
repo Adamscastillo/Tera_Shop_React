@@ -13,38 +13,38 @@ function CardProdutos() {
     <Form className='container-card'>
       <Row className='row'>
         <Col className='containerCard' >
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={CardImage} />
+          <Card className='card'>
+            <Card.Img variant="top" className='card-img' src={CardImage} />
             <Card.Body>
-              <Card.Title>Tênis</Card.Title>
+              <Card.Title className='card-title'>Tênis</Card.Title>
               <Card.Text>
                 Uma grande Variedades de Tênis: Esportivo, Social,
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button variant="primary" className='card-button'>Clique Aqui</Button>
             </Card.Body>
           </Card>
         </Col >
         <Col className='containerCard'>
           <Card style={{ width: '18rem', height: '442px'}}>
-            <Card.Img variant="top" src={CardImage2} />
+            <Card.Img variant="top" className='card-img' src={CardImage2} />
             <Card.Body>
-              <Card.Title>Tênis</Card.Title>
+              <Card.Title className='card-title'>Roupas</Card.Title>
               <Card.Text>
                 Uma grande Variedades de Tênis: Esportivo, Social,
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button variant="primary" className='card-button'>Clique Aqui</Button>
             </Card.Body>
           </Card>
         </Col>
         <Col className='containerCard'>
           <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={CardImage3} />
+            <Card.Img variant="top" className='card-img' src={CardImage3} />
             <Card.Body>
-              <Card.Title>Tênis</Card.Title>
+              <Card.Title className='card-title'>Acessórios</Card.Title>
               <Card.Text>
                 Uma grande Variedades de Tênis: Esportivo, Social,
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button variant="primary" className='card-button'>Clique Aqui</Button>
             </Card.Body>
           </Card>
         </Col>

@@ -4,9 +4,43 @@
   align-items: center;
   padding: 25px 25px;
 }
+
 .containerCard {
   padding: 10px 30px;
 }
+
+.containerCard .card-img {
+  object-fit: cover;
+  transform: scale(0.8);
+}
+
+.containerCard .card-title {
+  display: flex;
+  justify-content: center;
+}
+
+.containerCard .card-button {
+  transform: translateX(70%);
+  background-color: #ff7e3b;
+  font-weight: bold;
+  color: black;
+  transition: 1s;
+}
+.containerCard .card-button:hover {
+  scale: 1.05;
+}
 .row {
   flex-wrap: nowrap;
+}
+.card {
+  width: 18rem;
+  color: black;
+  background: rgb(142, 136, 131);
+  transition: background 1s;
+}
+.card:hover,
+.card:focus {
+  background: rgb(39, 37, 37);
+  color: white;
+  font-weight: 700;
 }

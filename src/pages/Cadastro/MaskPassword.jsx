@@ -17,7 +17,7 @@ const MaskSenha = (props) => (
           onChange={props.onChange}
         >
           {(inputProps) => (
-            <Form.Control {...inputProps} placeholder="Digite sua senha" />
+            <Form.Control {...inputProps} placeholder="Digite sua senha" required/>
           )}
         </InputMask>
       </Form.Group>

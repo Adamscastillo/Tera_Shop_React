@@ -1,65 +1,96 @@
-import React from 'react'
-import Button from 'react-bootstrap/Button'
-import Form from 'react-bootstrap/Form'
-import '../Cadastro/cadastro.css'
-import { useEffect, useState } from 'react'
-import axios from 'axios'
-import MaskCpf from './MaskCpf'
-import MaskName from './MaskName'
-import MaskEmail from './MaskEmail'
-import MaskTel from './MaskTel'
-import MaskCep from './MaskCep'
-import MaskSenha from './MaskPassword'
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Row from 'react-bootstrap/Row';
 
-const url = 'http://localhost:3030/users/create'
+function Cadastrar() {
+  const [validated, setValidated] = useState(false);
 
-function PostApi() {
-  const [data, setData] = useState([])
-  
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
 
-
-  useEffect(() => {
-    axios
-      .post(url, {
-        name: 'adams',
-        email: 'adams@gmail.com',
-        cep: 68950000,
-        cpf: 76681793215,
-        password: '123456'
-      })
-      .then(response => {
-        console.log(response)
-        setData(response.data)
-      })
-      .catch(error => console.log(error))
-  }, [])
-}
-
-function Cadastro() {
-
-  
+    setValidated(true);
+  };
 
   return (
-    <div className="main-cadastro">
-      <Form className="form">
-         <MaskName />
-
-        <MaskEmail />
-
-        <MaskCpf />
-
-        <MaskTel />
-
-       <MaskCep />
-
-        <MaskSenha /> 
-         
-        <Button variant="primary" type="submit">
-          Enviar
-        </Button>
-      </Form>
-    </div>
-  )
+    <Form noValidate validated={validated} onSubmit={handleSubmit}>
+      <Row className="mb-3">
+        <Form.Group as={Col} md="4" controlId="validationCustom01">
+          <Form.Label>First name</Form.Label>
+          <Form.Control
+            required
+            type="text"
+            placeholder="First name"
+            defaultValue="Mark"
+          />
+          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group as={Col} md="4" controlId="validationCustom02">
+          <Form.Label>Last name</Form.Label>
+          <Form.Control
+            required
+            type="text"
+            placeholder="Last name"
+            defaultValue="Otto"
+          />
+          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group as={Col} md="4" controlId="validationCustomUsername">
+          <Form.Label>Username</Form.Label>
+          <InputGroup hasValidation>
+            <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
+            <Form.Control
+              type="text"
+              placeholder="Username"
+              aria-describedby="inputGroupPrepend"
+              required
+            />
+            <Form.Control.Feedback type="invalid">
+              Please choose a username.
+            </Form.Control.Feedback>
+          </InputGroup>
+        </Form.Group>
+      </Row>
+      <Row className="mb-3">
+        <Form.Group as={Col} md="6" controlId="validationCustom03">
+          <Form.Label>City</Form.Label>
+          <Form.Control type="text" placeholder="City" required />
+          <Form.Control.Feedback type="invalid">
+            Please provide a valid city.
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group as={Col} md="3" controlId="validationCustom04">
+          <Form.Label>State</Form.Label>
+          <Form.Control type="text" placeholder="State" required />
+          <Form.Control.Feedback type="invalid">
+            Please provide a valid state.
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group as={Col} md="3" controlId="validationCustom05">
+          <Form.Label>Zip</Form.Label>
+          <Form.Control type="text" placeholder="Zip" required />
+          <Form.Control.Feedback type="invalid">
+            Please provide a valid zip.
+          </Form.Control.Feedback>
+        </Form.Group>
+      </Row>
+      <Form.Group className="mb-3">
+        <Form.Check
+          required
+          label="Agree to terms and conditions"
+          feedback="You must agree before submitting."
+          feedbackType="invalid"
+        />
+      </Form.Group>
+      <Button type="submit">Submit form</Button>
+    </Form>
+  );
 }
 
-export default Cadastro
+export default Cadastrar
